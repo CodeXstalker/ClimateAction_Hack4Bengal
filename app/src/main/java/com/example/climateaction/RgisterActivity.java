@@ -3,10 +3,12 @@ package com.example.climateaction;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -18,9 +20,9 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class RgisterActivity extends AppCompatActivity {
 
-    private TextView email, password;
+    private EditText email, password;
     private Button createAccount;
-    private  TextView alreadyNeedAnAccount;
+    private  TextView alreadyHaveAnAccount;
 
     private FirebaseAuth firebaseAuth;
     private FirebaseUser currentUser;
@@ -38,14 +40,22 @@ public class RgisterActivity extends AppCompatActivity {
                 registerUser();
             }
         });
+
+        alreadyHaveAnAccount.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                sendUserToLogInActivity();
+            }
+        });
+
     }
 
     private void registerUser() {
 
         String getEmail = email.getText().toString();
-        String getPassword = email.getText().toString();
+        String getPassword = password.getText().toString();
 
-        firebaseAuth.createUserWithEmailAndPassword(getEmail,getPassword).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+        firebaseAuth.createUserWithEmailAndPassword(getEmail,getPassword).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
@@ -76,7 +86,7 @@ public class RgisterActivity extends AppCompatActivity {
         email = findViewById(R.id.Email);
         password = findViewById(R.id.Password);
         createAccount = findViewById(R.id.CreateAccount);
-        alreadyNeedAnAccount = findViewById(R.id.AlreadyHaveAnAccount);
+        alreadyHaveAnAccount = findViewById(R.id.AlreadyHaveAnAccount);
 
     }
 }
