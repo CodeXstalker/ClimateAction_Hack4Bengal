@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "555552567453",
+    "project_id": "climateaction-91cfb",
+    "storage_bucket": "climateaction-91cfb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:555552567453:android:64898a2f86c9ef44e2a474",
+        "android_client_info": {
+          "package_name": "com.example.climateaction"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "555552567453-qhqc48q2lri09ptfd0qpic5b82suu3rc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBygDSlDrHTvh05yhGdNnTs9qcyjspOSY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "555552567453-qhqc48q2lri09ptfd0qpic5b82suu3rc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
