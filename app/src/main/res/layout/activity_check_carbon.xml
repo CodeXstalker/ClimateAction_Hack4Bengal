@@ -8,18 +8,20 @@
     android:orientation="vertical"
     android:layout_margin="10sp"
     android:padding="10sp"
-    tools:context=".Check_carbonActivity">
+    tools:context=".check_carbon">
 
-    <TextView
+    <AutoCompleteTextView
+        android:id="@+id/actview"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:text="Search your object here"
+        android:hint="Search here......"
         android:textSize="20dp"
+        android:layout_margin="10sp"
         android:gravity="center_vertical"
-        android:padding="10sp">
+        android:padding="10sp"/>
 
 
-    </TextView>
+
 
 
 
