@@ -15,31 +15,42 @@
         android:weightSum="3">
 
         <TextView
+            android:id="@+id/Item_list"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Item Listed"
+            android:layout_marginRight="2sp"
+            android:text="@string/Item_list"
             android:textAlignment="center"
             android:textSize="20sp" />
 
         <TextView
+            android:id="@+id/campaign"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Item Listed"
+            android:text="@string/Campaign"
             android:textAlignment="center"
             android:textSize="20sp" />
 
         <TextView
+            android:id="@+id/carbon_footprint"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Item Listed"
+            android:text="@string/Carbon_footprint"
             android:textAlignment="center"
             android:textSize="20sp" />
+
 
 
     </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        />
 
 
 </LinearLayout>

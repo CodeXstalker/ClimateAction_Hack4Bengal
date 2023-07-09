@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">ClimateAction</string>
+    <string name="Item_list">Item Listed</string>
+    <string name="Campaign">Campaign</string>
+    <string name="Carbon_footprint">Carbon Footprints</string>
 </resources>
