@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RgisterActivity">
+
+
+    <View
+        android:id="@+id/horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true" />
+
+    <View
+        android:id="@+id/vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:background="@drawable/inputs"
+        android:hint="Enter your Email"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Email"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginRight="10sp"
+        android:background="@drawable/inputs"
+        android:hint="Enter Your Password"
+        android:textAlignment="center"
+        android:textSize="25sp" />
+
+
+    <Button
+        android:id="@+id/CreateAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Password"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="35sp"
+        android:layout_marginRight="10sp"
+        android:backgroundTint="@color/ColorPrimary"
+        android:text="Create Account" />
+
+    <TextView
+        android:id="@+id/AlreadyHaveAnAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CreateAccount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10sp"
+        android:text="Already Have an Account ?"
+        android:textColor="@color/ColorPrimary" />
+
+
+</RelativeLayout>
