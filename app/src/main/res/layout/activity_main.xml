@@ -10,7 +10,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20sp"
+        android:layout_margin="20sp"
+        android:padding="10sp"
         android:orientation="horizontal"
         android:weightSum="3">
 
@@ -30,17 +31,11 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/Campaign"
+            android:layout_marginLeft="10sp"
             android:textAlignment="center"
             android:textSize="20sp" />
 
-        <TextView
-            android:id="@+id/carbon_footprint"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="@string/Carbon_footprint"
-            android:textAlignment="center"
-            android:textSize="20sp" />
+
 
 
 
@@ -55,11 +50,11 @@
     </androidx.recyclerview.widget.RecyclerView>
 
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-        android:id="@+id/ScanItems"
+        android:id="@+id/check_carbon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#96FA9A"
-        android:text="Scan Item"
+        android:text="Check Carbon"
         android:layout_marginRight="10sp"
         android:layout_gravity="bottom|end"
         />
