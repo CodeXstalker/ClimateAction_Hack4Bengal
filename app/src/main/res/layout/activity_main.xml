@@ -58,6 +58,7 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#96FA9A"
         android:src="@drawable/iconcamera"
+        android:layout_marginRight="10sp"
         android:layout_gravity="bottom|end"
         />
 
