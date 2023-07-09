@@ -53,11 +53,12 @@
 
     </androidx.recyclerview.widget.RecyclerView>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/ScanItems"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#96FA9A"
-        android:src="@drawable/iconcamera"
+        android:text="Scan Item"
         android:layout_marginRight="10sp"
         android:layout_gravity="bottom|end"
         />
