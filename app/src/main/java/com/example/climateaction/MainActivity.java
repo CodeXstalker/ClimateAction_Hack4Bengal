@@ -1,9 +1,13 @@
 package com.example.climateaction;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 
 import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton;
@@ -13,6 +17,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
     private ExtendedFloatingActionButton FAB;
+    private Toolbar toolbar;
 
     private FirebaseAuth firebaseAuth;
     private FirebaseUser currentUser;
@@ -23,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         fieldInitializer();
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("W'Clone");
         FAB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -37,7 +44,29 @@ public class MainActivity extends AppCompatActivity {
         firebaseAuth = FirebaseAuth.getInstance();
         currentUser = firebaseAuth.getCurrentUser();
         FAB = findViewById(R.id.check_carbon);
+        toolbar = findViewById(R.id.AppBar);
 
+    }
+
+    @NonNull
+    public boolean onCreateOptionsMenu(Menu menu) {
+        super.onCreateOptionsMenu(menu);
+        getMenuInflater().inflate(R.menu.options_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        super.onOptionsItemSelected(item);
+
+        if (item.getItemId() == R.id.Setting) {
+
+        }
+        if (item.getItemId() == R.id.LogOut) {
+
+
+        }
+        return true;
     }
 
     @Override
