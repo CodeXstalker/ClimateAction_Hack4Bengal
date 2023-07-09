@@ -50,7 +50,7 @@
         android:text="BUY"
         android:textSize="18dp"
         android:id="@+id/btn_buy_item">
-        
+
     </Button>
 
 
