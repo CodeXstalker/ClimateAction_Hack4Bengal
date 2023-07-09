@@ -51,6 +51,15 @@
 
 
     </LinearLayout>
+    <Button
+        android:id="@+id/btn_add_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:backgroundTint="#96FA9A"
+        android:layout_marginRight="10sp"
+        android:text="add Item"
+        android:textSize="20dp"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"

@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
 import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -17,6 +18,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
     private ExtendedFloatingActionButton FAB;
+    private Button btn_add_item;
     private Toolbar toolbar;
 
     private FirebaseAuth firebaseAuth;
@@ -37,6 +39,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+        btn_add_item.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent add = new Intent(getApplicationContext(), addItem.class);
+                startActivity(add);
+            }
+        });
     }
 
     private void fieldInitializer() {
@@ -45,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
         currentUser = firebaseAuth.getCurrentUser();
         FAB = findViewById(R.id.check_carbon);
         toolbar = findViewById(R.id.AppBar);
+        btn_add_item=findViewById(R.id.btn_add_item);
 
     }
 
