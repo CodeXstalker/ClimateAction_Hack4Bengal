@@ -13,6 +13,9 @@
         android:theme="@style/Theme.ClimateAction"
         tools:targetApi="31">
         <activity
+            android:name=".add_campaignActivity"
+            android:exported="false" />
+        <activity
             android:name=".addItem"
             android:exported="false" />
         <activity

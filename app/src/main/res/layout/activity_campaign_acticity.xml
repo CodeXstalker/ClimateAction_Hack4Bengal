@@ -40,6 +40,14 @@
 
 
     </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:backgroundTint="#96FAA9"
+        android:text="ADD CAMPAIGN"
+        android:layout_marginRight="10sp"
+        android:id="@+id/btn_addcamp"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
@@ -53,7 +61,7 @@
         android:id="@+id/check_carbon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#96FA9A"
+        android:backgroundTint="#96FAA9"
         android:text="Check Carbon"
         android:layout_marginRight="10sp"
         android:layout_gravity="bottom|end"
