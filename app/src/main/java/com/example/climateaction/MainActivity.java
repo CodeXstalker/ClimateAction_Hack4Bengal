@@ -134,6 +134,24 @@ public class MainActivity extends AppCompatActivity {
         item.add(new addItemstructure(R.drawable.boxicon, "Metal Bottle", "old  to sell sell some one price negotiable"));
         item.add(new addItemstructure(R.drawable.boxicon, "Charger", "old  to sell sell some one price negotiable"));
         item.add(new addItemstructure(R.drawable.boxicon, "Laptop Charger", "old  to sell sell some one price negotiable"));
+        item.add(new addItemstructure(R.drawable.boxicon, "Laptop", "old  to sell sell some one price negotiable"));
+        item.add(new addItemstructure(R.drawable.boxicon, "Mobile", "old  to sell sell some one price negotiable"));
+        item.add(new addItemstructure(R.drawable.boxicon, "Plastic Bottle", "old  to sell sell some one price negotiable"));
+        item.add(new addItemstructure(R.drawable.boxicon, "Metal Bottle", "old  to sell sell some one price negotiable"));
+        item.add(new addItemstructure(R.drawable.boxicon, "Charger", "old  to sell sell some one price negotiable"));
+        item.add(new addItemstructure(R.drawable.boxicon, "Laptop Charger", "old  to sell sell some one price negotiable"));
+        item.add(new addItemstructure(R.drawable.boxicon, "Laptop", "old  to sell sell some one price negotiable"));
+        item.add(new addItemstructure(R.drawable.boxicon, "Mobile", "old  to sell sell some one price negotiable"));
+        item.add(new addItemstructure(R.drawable.boxicon, "Plastic Bottle", "old  to sell sell some one price negotiable"));
+        item.add(new addItemstructure(R.drawable.boxicon, "Metal Bottle", "old  to sell sell some one price negotiable"));
+        item.add(new addItemstructure(R.drawable.boxicon, "Charger", "old  to sell sell some one price negotiable"));
+        item.add(new addItemstructure(R.drawable.boxicon, "Laptop Charger", "old  to sell sell some one price negotiable"));
+        item.add(new addItemstructure(R.drawable.boxicon, "Laptop", "old  to sell sell some one price negotiable"));
+        item.add(new addItemstructure(R.drawable.boxicon, "Mobile", "old  to sell sell some one price negotiable"));
+        item.add(new addItemstructure(R.drawable.boxicon, "Plastic Bottle", "old  to sell sell some one price negotiable"));
+        item.add(new addItemstructure(R.drawable.boxicon, "Metal Bottle", "old  to sell sell some one price negotiable"));
+        item.add(new addItemstructure(R.drawable.boxicon, "Charger", "old  to sell sell some one price negotiable"));
+        item.add(new addItemstructure(R.drawable.boxicon, "Laptop Charger", "old  to sell sell some one price negotiable"));
 
         additemAdapter adapter = new additemAdapter(this, item);
         reitem.setAdapter(adapter);

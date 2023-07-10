@@ -1,6 +1,8 @@
 package com.example.climateaction;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,10 +12,14 @@ import android.widget.TextView;
 
 import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton;
 
+import java.util.ArrayList;
+
 public class campaign_acticity extends AppCompatActivity {
     private ExtendedFloatingActionButton check_carbon;
     private TextView item_list;
     Button btn_addcamp;
+    ArrayList<RecyclerCampaignStructure> campaign = new ArrayList<>();
+    private RecyclerView reitem;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,5 +49,34 @@ public class campaign_acticity extends AppCompatActivity {
                startActivity(addcamp);
            }
        });
+       reitem = findViewById(R.id.re_item);
+       reitem.setLayoutManager(new LinearLayoutManager(this));
+
+       campaign.add(new RecyclerCampaignStructure("Plantation","100","10/05/2023-Monday"));
+        campaign.add(new RecyclerCampaignStructure("Plantation","100","10/05/2023-Monday"));
+        campaign.add(new RecyclerCampaignStructure("Plantation","100","10/05/2023-Monday"));
+        campaign.add(new RecyclerCampaignStructure("Plantation","100","10/05/2023-Monday"));
+        campaign.add(new RecyclerCampaignStructure("Plantation","100","10/05/2023-Monday"));
+        campaign.add(new RecyclerCampaignStructure("Plantation","100","10/05/2023-Monday"));
+        campaign.add(new RecyclerCampaignStructure("Plantation","100","10/05/2023-Monday"));
+        campaign.add(new RecyclerCampaignStructure("Plantation","100","10/05/2023-Monday"));
+        campaign.add(new RecyclerCampaignStructure("Plantation","100","10/05/2023-Monday"));
+        campaign.add(new RecyclerCampaignStructure("Plantation","100","10/05/2023-Monday"));
+        campaign.add(new RecyclerCampaignStructure("Plantation","100","10/05/2023-Monday"));
+        campaign.add(new RecyclerCampaignStructure("Plantation","100","10/05/2023-Monday"));
+        campaign.add(new RecyclerCampaignStructure("Plantation","100","10/05/2023-Monday"));
+        campaign.add(new RecyclerCampaignStructure("Plantation","100","10/05/2023-Monday"));
+        campaign.add(new RecyclerCampaignStructure("Plantation","100","10/05/2023-Monday"));
+        campaign.add(new RecyclerCampaignStructure("Plantation","100","10/05/2023-Monday"));
+        campaign.add(new RecyclerCampaignStructure("Plantation","100","10/05/2023-Monday"));
+        campaign.add(new RecyclerCampaignStructure("Plantation","100","10/05/2023-Monday"));
+        campaign.add(new RecyclerCampaignStructure("Plantation","100","10/05/2023-Monday"));
+        campaign.add(new RecyclerCampaignStructure("Plantation","100","10/05/2023-Monday"));
+        campaign.add(new RecyclerCampaignStructure("Plantation","100","10/05/2023-Monday"));
+        campaign.add(new RecyclerCampaignStructure("Plantation","100","10/05/2023-Monday"));
+
+        RecyclerCampaignAdapter adapter = new RecyclerCampaignAdapter(this, campaign);
+        reitem.setAdapter(adapter);
+
     }
 }

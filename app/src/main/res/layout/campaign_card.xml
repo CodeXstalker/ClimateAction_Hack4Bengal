@@ -43,6 +43,7 @@
         android:text="Duration" />
 
     <TextView
+        android:id="@+id/date_day"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/volunteer"
