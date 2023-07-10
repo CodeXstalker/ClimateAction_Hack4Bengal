@@ -38,8 +38,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         fieldInitializer();
         reitem.setLayoutManager(new LinearLayoutManager(this));
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("W'Clone");
+//        setSupportActionBar(toolbar);
+//        getSupportActionBar().setTitle("W'Clone");
         FAB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
