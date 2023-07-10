@@ -10,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -19,6 +20,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class MainActivity extends AppCompatActivity {
     private ExtendedFloatingActionButton FAB;
     private Button btn_add_item;
+    private TextView campaign;
     private Toolbar toolbar;
 
     private FirebaseAuth firebaseAuth;
@@ -46,6 +48,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(add);
             }
         });
+        campaign.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent camp = new Intent(getApplicationContext(), campaign_acticity.class);
+                startActivity(camp);
+            }
+        });
     }
 
     private void fieldInitializer() {
@@ -55,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
         FAB = findViewById(R.id.check_carbon);
         toolbar = findViewById(R.id.AppBar);
         btn_add_item=findViewById(R.id.btn_add_item);
+        campaign=findViewById(R.id.campaign);
 
     }
 
