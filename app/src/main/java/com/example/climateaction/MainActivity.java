@@ -3,6 +3,8 @@ package com.example.climateaction;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,6 +19,8 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
     private ExtendedFloatingActionButton FAB;
     private Button btn_add_item;
@@ -25,13 +29,15 @@ public class MainActivity extends AppCompatActivity {
 
     private FirebaseAuth firebaseAuth;
     private FirebaseUser currentUser;
+    private RecyclerView reitem;
+    ArrayList<addItemstructure> item = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         fieldInitializer();
+        reitem.setLayoutManager(new LinearLayoutManager(this));
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("W'Clone");
         FAB.setOnClickListener(new View.OnClickListener() {
@@ -55,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(camp);
             }
         });
+        additem();
     }
 
     private void fieldInitializer() {
@@ -65,6 +72,8 @@ public class MainActivity extends AppCompatActivity {
         toolbar = findViewById(R.id.AppBar);
         btn_add_item=findViewById(R.id.btn_add_item);
         campaign=findViewById(R.id.campaign);
+        reitem=findViewById(R.id.re_item);
+
 
     }
 
@@ -118,5 +127,18 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+    public void additem(){
+        item.add(new addItemstructure(R.drawable.boxicon, "Laptop", "old  to sell sell some one price negotiable"));
+        item.add(new addItemstructure(R.drawable.boxicon, "Mobile", "old  to sell sell some one price negotiable"));
+        item.add(new addItemstructure(R.drawable.boxicon, "Plastic Bottle", "old  to sell sell some one price negotiable"));
+        item.add(new addItemstructure(R.drawable.boxicon, "Metal Bottle", "old  to sell sell some one price negotiable"));
+        item.add(new addItemstructure(R.drawable.boxicon, "Charger", "old  to sell sell some one price negotiable"));
+        item.add(new addItemstructure(R.drawable.boxicon, "Laptop Charger", "old  to sell sell some one price negotiable"));
+
+        additemAdapter adapter = new additemAdapter(this, item);
+        reitem.setAdapter(adapter);
+
+    }
+
 
 }
