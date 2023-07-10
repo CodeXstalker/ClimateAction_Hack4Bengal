@@ -80,13 +80,27 @@ public class MainActivity extends AppCompatActivity {
         super.onOptionsItemSelected(item);
 
         if (item.getItemId() == R.id.Setting) {
-
+                sendToSettingACtivity();
         }
         if (item.getItemId() == R.id.LogOut) {
+
+            firebaseAuth.signOut();
+            sentToSignInActivity();
 
 
         }
         return true;
+    }
+
+    private void sentToSignInActivity() {
+        Intent RegisterIntent = new Intent(getApplicationContext(),LogInActivity.class);
+        startActivity(RegisterIntent);
+    }
+
+    private void sendToSettingACtivity() {
+        Intent RegisterIntent = new Intent(getApplicationContext(),SettingActivity.class);
+        startActivity(RegisterIntent);
+
     }
 
     @Override

@@ -27,6 +27,9 @@
         <activity
             android:name=".RgisterActivity"
             android:exported="false" />
+
+        <activity android:name=".SettingActivity"
+            android:exported="false"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">
