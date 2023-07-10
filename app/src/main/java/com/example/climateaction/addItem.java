@@ -2,6 +2,7 @@ package com.example.climateaction;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -23,6 +24,8 @@ public class addItem extends AppCompatActivity {
             public void onClick(View view) {
                 product_name=item_name.getText().toString();
                 product_discription=item_discription.getText().toString();
+                Intent i =new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(i);
             }
         });
 
