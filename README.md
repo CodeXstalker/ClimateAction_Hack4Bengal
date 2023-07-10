@@ -2,7 +2,7 @@
 
 # CoFo :- Embracing Carbon Neutrality with Joy
 
-![Logo](https://github.com/CodeXstalker/ClimateAction_Hack4Bengal/blob/main/app/src/main/res/drawable/banner.jpg)
+![Logo](https://github.com/CodeXstalker/ClimateAction_Hack4Bengal/blob/main/banner1.jpg)
 
 
 ## 🔰 Live Demo:
