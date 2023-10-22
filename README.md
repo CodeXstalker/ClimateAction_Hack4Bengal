@@ -39,11 +39,11 @@ Our solution **CoFo : Embracing Carbon Neutrality with Joy** is a mobile app tha
 
 ## 🔰 The Team Behind It:
 
-- [Shivanhh Kumar](https://raihankhan.dev) (Frontend/Backend Developer)
+- [Shivansh Kumar](https://www.linkedin.com/in/shivansh-kumar-492b3021b/) (Frontend/Backend Developer)
 
-- [Sankalp Tiwari](https://www.linkedin.com/in/aritra-roy-b88b421a5/) (Frontend/Backend Developer)
+- [Sankalp Tiwari](https://www.linkedin.com/in/my-profile-sankalp/) (Frontend/Backend Developer)
 
-- [Janvi Singh](https://www.linkedin.com/in/risavdeb-patra-703971227/) (UI/UX Designer)
+- [Janvi Singh] (UI/UX Designer)
 
 
 
